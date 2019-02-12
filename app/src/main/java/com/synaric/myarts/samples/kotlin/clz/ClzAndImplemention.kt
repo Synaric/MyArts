@@ -17,6 +17,7 @@ object ClzAndImplementation: Base(){
         OuterClz().testFoo()
 
         // 演示多重继承
+        C().foo()
     }
 
     // 构造函数，省略了constructor
@@ -96,7 +97,7 @@ object ClzAndImplementation: Base(){
 
     interface B {
 
-        open fun foo() {
+        fun foo() {
             Log.d(TAG, "B.foo()")
         }
     }
