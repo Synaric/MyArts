@@ -3,6 +3,7 @@ package com.synaric.myarts
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.synaric.myarts.samples.kotlin.clz.ClzAndImplementation
+import com.synaric.myarts.samples.kotlin.clz.Extensions
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,7 +15,8 @@ class MainActivity : AppCompatActivity() {
         // Example of a call to a native method
         sample_text.text = stringFromJNI()
 
-        ClzAndImplementation.run()
+        // ClzAndImplementation.run()
+        Extensions.run()
     }
 
     /**
