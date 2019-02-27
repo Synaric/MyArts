@@ -11,6 +11,8 @@ object NestedClz: Base() {
         val inner = NestedClz.Inner()
         inner.setName()
         inner.getName()
+        Log.d(TAG, inner.getName())
+        Log.d(TAG, name)
 
         val funLit = lambda@ fun String.() {
             val d = this // funLit 的接收者

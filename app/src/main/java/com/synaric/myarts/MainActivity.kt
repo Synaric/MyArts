@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.synaric.myarts.samples.kotlin.clz.ClzAndImplementation
 import com.synaric.myarts.samples.kotlin.clz.DataClz
 import com.synaric.myarts.samples.kotlin.clz.Extensions
+import com.synaric.myarts.samples.kotlin.clz.NestedClz
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -18,7 +19,8 @@ class MainActivity : AppCompatActivity() {
 
         // ClzAndImplementation.run()
         // Extensions.run()
-        DataClz.run()
+        // DataClz.run()
+        NestedClz.run()
     }
 
     /**
