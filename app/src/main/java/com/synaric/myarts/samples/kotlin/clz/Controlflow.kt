@@ -1,4 +1,4 @@
-package com.synaric.myarts.samples.kotlin.base
+package com.synaric.myarts.samples.kotlin.clz
 
 import android.util.Log
 import com.synaric.myarts.samples.kotlin.Base
