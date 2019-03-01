@@ -2,6 +2,7 @@ package com.synaric.myarts.samples.kotlin.clz
 
 import android.util.Log
 import com.synaric.myarts.samples.kotlin.Base
+import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
 
 object DelegatedProperties: Base() {
@@ -11,13 +12,13 @@ object DelegatedProperties: Base() {
         "aaa"
     }
 
-    class Delegate1 {
-        operator fun getValue(a: A, property: KProperty<*>): String {
-            Log.d(TAG, "get $a  $property")
+    class Delegate1: ReadWriteProperty<A, String> {
+        override fun getValue(thisRef: A, property: KProperty<*>): String {
+            Log.d(TAG, "get $thisRef  $property")
             return ""
         }
-        operator fun setValue(a: A, property: KProperty<*>, s: String) {
-            Log.d(TAG, "set $a  $s")
+        override fun setValue(thisRef: A, property: KProperty<*>, value: String) {
+            Log.d(TAG, "set $thisRef  $value")
         }
     }
 
@@ -38,6 +39,4 @@ object DelegatedProperties: Base() {
         a2.p3 = "p3"
         Log.d(TAG, a2.p3)
     }
-
-
 }
