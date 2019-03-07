@@ -2,6 +2,7 @@ package com.synaric.myarts
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.synaric.myarts.samples.kotlin.clz.ClzAndImplementation
 import com.synaric.myarts.samples.kotlin.clz.DataClz
 import com.synaric.myarts.samples.kotlin.clz.Extensions
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         // ClzAndImplementation.run()
         // Extensions.run()
         // DataClz.run()
-        NestedClz.run()
+        // NestedClz.run()
     }
 
     /**
