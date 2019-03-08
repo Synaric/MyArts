@@ -10,7 +10,7 @@ android {
         applicationId "com.synaric.myarts"
         minSdkVersion 19
         targetSdkVersion 28
-        versionCode 1
+        versionCode 4
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
@@ -30,6 +30,9 @@ android {
             path "CMakeLists.txt"
         }
     }
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
@@ -40,4 +43,5 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation project(':arts')
 }
