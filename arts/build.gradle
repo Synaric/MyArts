@@ -37,6 +37,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
+    // multidex
+    implementation 'com.android.support:multidex:1.0.3'
+
     // bugly
     implementation 'com.tencent.bugly:crashreport:2.6.6.1'
     implementation 'com.tencent.bugly:nativecrashreport:3.3.1'
@@ -51,4 +54,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
     // 图片
     implementation 'com.squareup.picasso:picasso:2.71828'
+
+    // log
+    implementation 'com.orhanobut:logger:2.2.0'
 }

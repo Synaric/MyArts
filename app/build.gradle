@@ -10,7 +10,7 @@ android {
         applicationId "com.synaric.myarts"
         minSdkVersion 19
         targetSdkVersion 28
-        versionCode 13
+        versionCode 16
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
@@ -22,6 +22,7 @@ android {
                 abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
             }
         }
+        multiDexEnabled true
     }
     buildTypes {
         release {
