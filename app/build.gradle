@@ -10,12 +10,16 @@ android {
         applicationId "com.synaric.myarts"
         minSdkVersion 19
         targetSdkVersion 28
-        versionCode 4
+        versionCode 13
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
                 cppFlags "-std=c++14 -frtti -fexceptions"
+            }
+            ndk {
+                // 设置支持的SO库架构
+                abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
             }
         }
     }
@@ -23,6 +27,10 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BUGLY_APP_ID", "\"8739783d09\""
+        }
+        debug {
+            buildConfigField "String", "BUGLY_APP_ID", "\"8739783d09\""
         }
     }
     externalNativeBuild {
